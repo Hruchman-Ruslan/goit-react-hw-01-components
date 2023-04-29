@@ -1,13 +1,16 @@
+import React from 'react';
+
 import { Profile } from './profile/Profile';
+import { Statistics } from './statistics/Statistics';
 import user from './profile/data/user.json';
-// import statistics from './statistics/data/data.json';
+import data from './statistics/data/data.json';
 
 export const App = () => {
   return (
     <div
       style={{
         height: '100vh',
-        display: 'flex',
+        // display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
         fontSize: 40,
@@ -22,6 +25,7 @@ export const App = () => {
         location={user.location}
         stats={user.stats}
       />
+      <Statistics title="Upload stats" stats={data} />
     </div>
   );
 };
