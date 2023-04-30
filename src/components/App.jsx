@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { Profile } from './profile/Profile';
-import { Statistics } from './statisticList/StatisticList';
+import { Profile } from './Profile/Profile';
+import { Statistics } from './StatisticList/StatisticList';
 import { FriendList } from './FriendList/FriendList';
-import { TransactionHistory } from './transactionHistory/TransactionHistory';
+import { TransactionHistory } from './TransactionHistory/TransactionHistory';
 
 import user from './data/user.json';
 import data from './data/data.json';
