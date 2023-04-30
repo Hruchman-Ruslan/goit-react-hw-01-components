@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Profile } from './profile/Profile';
 import { Statistics } from './statisticList/StatisticList';
-import { FriendList } from './friendList/FriendList';
+import { FriendList } from './FriendList/FriendList';
 import { TransactionHistory } from './transactionHistory/TransactionHistory';
 
 import user from './data/user.json';
