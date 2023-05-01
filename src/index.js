@@ -5,7 +5,7 @@ import 'modern-normalize';
 
 import { App } from 'components/App/App';
 
-import { GlobalStyles } from './utils/GlobaleStyle';
+import { GlobalStyles } from './components/styles/GlobaleStyle';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

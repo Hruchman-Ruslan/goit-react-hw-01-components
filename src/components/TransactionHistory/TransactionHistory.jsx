@@ -1,6 +1,7 @@
 import { PropTypes } from 'prop-types';
 
-import { Section } from 'utils/Section.styled';
+import { Section } from '../_reusable/Section.styled';
+
 import {
   Table,
   Header,
@@ -47,5 +48,5 @@ TransactionHistory.propTypes = {
       amount: PropTypes.string.isRequired,
       currency: PropTypes.string.isRequired,
     }),
-  ),
+  ).isRequired,
 };

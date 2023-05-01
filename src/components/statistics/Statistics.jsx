@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
 
-import { getRandomHexColor } from './randomColors';
+import { getRandomHexColor } from '../../utils/randomColors';
 
-import { Section } from 'utils/Section.styled';
+import { Section } from '../_reusable/Section.styled';
 import { Title, List, Item, Label, Percentage } from './Statistics.styled';
 
 export const Statistics = ({ title, stats }) => {
@@ -32,5 +32,5 @@ Statistics.propTypes = {
       label: PropTypes.string.isRequired,
       percentage: PropTypes.number.isRequired,
     }),
-  ),
+  ).isRequired,
 };

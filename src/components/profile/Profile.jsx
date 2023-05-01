@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-import { Section } from 'utils/Section.styled';
+import { Section } from '../_reusable/Section.styled';
 
 import {
   Wrapper,
@@ -57,5 +57,5 @@ Profile.propTypes = {
     followers: PropTypes.number.isRequired,
     views: PropTypes.number.isRequired,
     likes: PropTypes.number.isRequired,
-  }),
+  }).isRequired,
 };

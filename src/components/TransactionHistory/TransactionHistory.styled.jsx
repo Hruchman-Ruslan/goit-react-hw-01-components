@@ -19,7 +19,7 @@ export const Body = styled.tbody``;
 export const Key = styled.tr`
   outline: 1px solid tomato;
 
-  :nth-child(2n) {
+  :nth-of-type(2n) {
     background-color: #00ffff;
     color: #010101;
   }
