@@ -1,7 +1,14 @@
 import { css } from '@emotion/react';
 
 export const GlobalStyles = css`
+  html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+
   body {
+    background-color: #010101;
+    color: beige;
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
       'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
@@ -21,19 +28,30 @@ export const GlobalStyles = css`
   h4,
   h5,
   h6,
-  p,
-  ul {
+  p {
     margin-top: 0;
-    margin-bottom: 0;
   }
-
+  ul,
+  ol {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+  }
+  button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+  }
   a {
     text-decoration: none;
-    color: currentColor;
+    color: inherit;
   }
-
-  ul {
-    padding-left: 0;
-    list-style: none;
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
   }
 `;

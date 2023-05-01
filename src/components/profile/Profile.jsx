@@ -1,5 +1,18 @@
 import PropTypes from 'prop-types';
-import css from './Profile.module.css';
+
+import { Section } from 'utils/Section.styled';
+
+import {
+  Wrapper,
+  Img,
+  Name,
+  Social,
+  Location,
+  List,
+  Item,
+  Quantity,
+  Label,
+} from './Profile.styled';
 
 export const Profile = ({
   avatar,
@@ -9,29 +22,29 @@ export const Profile = ({
   stats: { followers, views, likes },
 }) => {
   return (
-    <div className={css.profile}>
-      <div className="description">
-        <img src={avatar} alt={username} className="avatar" />
-        <p className={css.name}>{username}</p>
-        <p className={css.tag}>@{tag}</p>
-        <p className={css.location}>{location}</p>
-      </div>
+    <Section>
+      <Wrapper>
+        <Img src={avatar} alt={username} />
+        <Name>{username}</Name>
+        <Social>@{tag}</Social>
+        <Location>{location}</Location>
+      </Wrapper>
 
-      <ul className={css.stats}>
-        <li>
-          <span className={css.label}>{'Followers'}</span>
-          <span className={css.quantity}>{followers}</span>
-        </li>
-        <li>
-          <span className={css.label}>{'Views'}</span>
-          <span className={css.quantity}>{views}</span>
-        </li>
-        <li>
-          <span className={css.label}>{'Likes'}</span>
-          <span className={css.quantity}>{likes}</span>
-        </li>
-      </ul>
-    </div>
+      <List>
+        <Item>
+          <Label>Followers</Label>
+          <Quantity>{followers}</Quantity>
+        </Item>
+        <Item>
+          <Label>Views</Label>
+          <Quantity>{views}</Quantity>
+        </Item>
+        <Item>
+          <Label>Likes</Label>
+          <Quantity>{likes}</Quantity>
+        </Item>
+      </List>
+    </Section>
   );
 };
 
