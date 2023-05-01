@@ -7,4 +7,8 @@ export const Section = styled.section`
   text-align: center;
 
   filter: drop-shadow(0px 0px 30px #00ffff);
+
+  :hover {
+    filter: drop-shadow(0px 0px 30px tomato);
+  }
 `;

@@ -26,6 +26,11 @@ export const Avatar = styled.img`
   height: 70px;
 `;
 export const Name = styled.p`
-  font-size: 24px;
   font-weight: 400;
+
+  filter: drop-shadow(0px 0px 30px #00ffff);
+
+  :hover {
+    filter: drop-shadow(0px 0px 30px tomato);
+  }
 `;
